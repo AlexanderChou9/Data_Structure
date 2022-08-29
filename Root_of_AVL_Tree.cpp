@@ -38,6 +38,14 @@ int getHeight(AVLTree t) {
     if (t) return max(getHeight(t->left), getHeight(t->right)) + 1;
     else return 0;
 }
+
+////// get height
+//int get_height(avl_tree t){
+//    if(!t)
+//        return -1;
+//    else
+//        return t->height;
+//}
 AVLTree Left_Rotation(AVLTree a) {
     AVLTree b = a->left;
     a->left = b->right;
